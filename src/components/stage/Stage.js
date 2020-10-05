@@ -10,8 +10,8 @@ const Stage = () => {
   return (
     <div id='stage'>
       {stage.map((row) => {
-        return row.map((cell) => {
-          return <Cell className={cell[1]} />;
+        return row.map((cell, index) => {
+          return <Cell key={index} className={cell[1]} />;
         });
       })}
     </div>

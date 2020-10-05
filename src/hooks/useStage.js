@@ -23,10 +23,10 @@ export const useStage = () => {
 
   const initIsWall = (i, x) => {
     return (
-      (i === 0 && x < STAGE_WIDTH) ||
+      (i === 0 && x < STAGE_HEIGHT) ||
       x === 0 ||
       x + 1 === STAGE_WIDTH ||
-      i + 1 === STAGE_WIDTH
+      i + 1 === STAGE_HEIGHT
     );
   };
 
